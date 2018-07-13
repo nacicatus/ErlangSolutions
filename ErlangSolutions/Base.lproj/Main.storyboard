@@ -700,7 +700,7 @@ Erlang Solutions provides up to date Erlang/OTP packages the day after release.<
         <!--Erlang Preferences Tab View Controller-->
         <scene sceneID="Avm-s5-Iw2">
             <objects>
-                <tabViewController storyboardIdentifier="ErlangHelperViewController" selectedTabViewItemIndex="1" id="hcj-mN-3fY" customClass="ErlangPreferencesTabViewController" customModule="ErlangSolutions" customModuleProvider="target" sceneMemberID="viewController">
+                <tabViewController storyboardIdentifier="ErlangPreferencesTabViewController" selectedTabViewItemIndex="0" id="hcj-mN-3fY" customClass="ErlangPreferencesTabViewController" customModule="ErlangSolutions" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="Installer" identifier="ErlangInstaller" id="IdX-FM-QYY"/>
                         <tabViewItem label="Releases" identifier="ErlangReleases" id="fGq-fa-ARS"/>
