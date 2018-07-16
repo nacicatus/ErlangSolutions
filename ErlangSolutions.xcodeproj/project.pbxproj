@@ -7,17 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30210E1C20F77D1400C76A99 /* ErlangPreferencesTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30210E1A20F77D1400C76A99 /* ErlangPreferencesTabViewController.swift */; };
 		30210E1F20F78DF100C76A99 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30210E1E20F78DF100C76A99 /* EventMonitor.swift */; };
 		30635C8E20F760540092A8B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30635C8D20F760540092A8B0 /* AppDelegate.swift */; };
 		30635C9220F760540092A8B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30635C9120F760540092A8B0 /* Assets.xcassets */; };
 		30635C9520F760540092A8B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30635C9320F760540092A8B0 /* Main.storyboard */; };
 		30B4D6EB20F79EF000F88F39 /* ErlangPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D6EA20F79EF000F88F39 /* ErlangPreferences.swift */; };
-		30B4D6ED20F79F1800F88F39 /* ErlangReleases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D6EC20F79F1800F88F39 /* ErlangReleases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		30210E1A20F77D1400C76A99 /* ErlangPreferencesTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErlangPreferencesTabViewController.swift; sourceTree = "<group>"; };
 		30210E1E20F78DF100C76A99 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		30635C8A20F760540092A8B0 /* ErlangSolutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErlangSolutions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30635C8D20F760540092A8B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +22,6 @@
 		30635C9420F760540092A8B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30635C9620F760540092A8B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B4D6EA20F79EF000F88F39 /* ErlangPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErlangPreferences.swift; sourceTree = "<group>"; };
-		30B4D6EC20F79F1800F88F39 /* ErlangReleases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErlangReleases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +56,6 @@
 			children = (
 				30635C8D20F760540092A8B0 /* AppDelegate.swift */,
 				30210E1E20F78DF100C76A99 /* EventMonitor.swift */,
-				30210E1A20F77D1400C76A99 /* ErlangPreferencesTabViewController.swift */,
-				30B4D6EC20F79F1800F88F39 /* ErlangReleases.swift */,
 				30B4D6EA20F79EF000F88F39 /* ErlangPreferences.swift */,
 				30635C9120F760540092A8B0 /* Assets.xcassets */,
 				30635C9320F760540092A8B0 /* Main.storyboard */,
@@ -144,8 +138,6 @@
 			files = (
 				30210E1F20F78DF100C76A99 /* EventMonitor.swift in Sources */,
 				30B4D6EB20F79EF000F88F39 /* ErlangPreferences.swift in Sources */,
-				30B4D6ED20F79F1800F88F39 /* ErlangReleases.swift in Sources */,
-				30210E1C20F77D1400C76A99 /* ErlangPreferencesTabViewController.swift in Sources */,
 				30635C8E20F760540092A8B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,7 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.image = NSImage(named: "menu-bar-icon")
             button.target = self
         }
-        popover.contentViewController = ErlangPreferencesTabViewController.freshController()
+        popover.contentViewController = ErlangPreferences.freshController()
 
         constructMenu()
         

@@ -14,12 +14,22 @@ class ErlangPreferences: NSViewController {
     
     @IBOutlet weak var esl: NSImageView!
     
-    @IBOutlet weak var getTheLatest: NSTextField!
+
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
+    }
+}
+
+extension ErlangPreferences {
+    static func freshController() -> ErlangPreferences {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        guard let viewController = storyboard.instantiateController(withIdentifier: "ErlangPreferences") as? ErlangPreferences else {
+            fatalError("Check Main Storyboard")
+        }
+        return viewController
     }
 }

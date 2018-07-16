@@ -671,10 +671,10 @@
                                 <rect key="frame" x="20" y="308" width="128" height="128"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="topLeft" imageScaling="proportionallyDown" image="erlang-solutions" id="JWO-MC-Eoj"/>
                             </imageView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1oy-3m-jYp">
-                                <rect key="frame" x="154" y="366" width="505" height="70"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SzB-Zg-fyB">
+                                <rect key="frame" x="154" y="389" width="505" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="Ktk-GZ-YwJ">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="5uI-Aj-daD">
                                     <font key="font" metaFont="system"/>
                                     <string key="title">Get the latest version of Erlang/OTP as soon as it's out.
 Erlang Solutions provides up to date Erlang/OTP packages the day after release.</string>
@@ -682,60 +682,67 @@ Erlang Solutions provides up to date Erlang/OTP packages the day after release.<
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="Aoc-hw-gAb" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="3oh-ud-eHW"/>
-                            <constraint firstItem="Aoc-hw-gAb" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="kVq-v5-ROJ"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="esl" destination="Aoc-hw-gAb" id="mfk-KO-k8Y"/>
-                        <outlet property="getTheLatest" destination="1oy-3m-jYp" id="KNR-cs-CUU"/>
-                    </connections>
-                </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="589" y="142"/>
-        </scene>
-        <!--Erlang Preferences Tab View Controller-->
-        <scene sceneID="Avm-s5-Iw2">
-            <objects>
-                <tabViewController storyboardIdentifier="ErlangPreferencesTabViewController" selectedTabViewItemIndex="0" id="hcj-mN-3fY" customClass="ErlangPreferencesTabViewController" customModule="ErlangSolutions" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabViewItems>
-                        <tabViewItem label="Installer" identifier="ErlangInstaller" id="IdX-FM-QYY"/>
-                        <tabViewItem label="Releases" identifier="ErlangReleases" id="fGq-fa-ARS"/>
-                    </tabViewItems>
-                    <tabView key="tabView" type="noTabsNoBorder" id="OWz-oa-0Kz">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <font key="font" metaFont="message"/>
-                        <tabViewItems/>
-                    </tabView>
-                    <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="tabItems" id="yT0-Fa-mRJ"/>
-                        <segue destination="m59-OS-BQp" kind="relationship" relationship="tabItems" id="b4c-Cr-zqX"/>
-                    </connections>
-                </tabViewController>
-                <customObject id="UoJ-tX-wkZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-298" y="347"/>
-        </scene>
-        <!--Erlang Releases-->
-        <scene sceneID="qRs-Vl-3cz">
-            <objects>
-                <viewController storyboardIdentifier="Erlang Releases" id="m59-OS-BQp" customClass="ErlangReleases" customModule="ErlangSolutions" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="O3E-cm-wok">
-                        <rect key="frame" x="0.0" y="0.0" width="677" height="456"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ma6-Dw-BgQ">
-                                <rect key="frame" x="20" y="20" width="637" height="416"/>
-                                <clipView key="contentView" id="lbk-bP-pNu">
-                                    <rect key="frame" x="1" y="0.0" width="635" height="415"/>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="txI-gX-1t0">
+                                <rect key="frame" x="154" y="347" width="188" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Automatically start on login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="jMs-jH-sAb">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xoq-fa-rSY">
+                                <rect key="frame" x="154" y="327" width="247" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Automatically check for new releases" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cqj-ek-UC3">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Pb1-1v-4vj">
+                                <rect key="frame" x="20" y="306" width="637" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWu-r9-e2H">
+                                <rect key="frame" x="18" y="283" width="141" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default Erlang Release:" id="Kej-fj-7fX">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Onl-h6-efZ">
+                                <rect key="frame" x="561" y="275" width="99" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="8j9-m2-8kI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>Item 1</string>
+                                        <string>Item 2</string>
+                                        <string>Item 3</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                            </comboBox>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9r-80-ft3">
+                                <rect key="frame" x="376" y="280" width="179" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default Terminal Application:" id="6Wu-ND-bNR">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ma6-Dw-BgQ">
+                                <rect key="frame" x="20" y="32" width="637" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <clipView key="contentView" ambiguous="YES" id="lbk-bP-pNu">
+                                    <rect key="frame" x="1" y="0.0" width="635" height="175"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="HOI-Ln-tBs" viewBased="YES" id="up6-Sg-aZf">
-                                            <rect key="frame" x="0.0" y="0.0" width="635" height="392"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="635" height="152"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -832,21 +839,51 @@ Erlang Solutions provides up to date Erlang/OTP packages the day after release.<
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ntF-os-wdf">
+                                <rect key="frame" x="18" y="241" width="177" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default Installation Location:" id="wbC-VR-5pE">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0jG-mo-w7z">
+                                <rect key="frame" x="201" y="238" width="296" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="yhK-ql-yLv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cf6-J0-gpf">
+                                <rect key="frame" x="229" y="275" width="99" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="WHD-cB-TLG">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>Item 1</string>
+                                        <string>Item 2</string>
+                                        <string>Item 3</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                            </comboBox>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Ma6-Dw-BgQ" firstAttribute="top" secondItem="O3E-cm-wok" secondAttribute="top" constant="20" symbolic="YES" id="6n3-5V-a9q"/>
-                            <constraint firstItem="Ma6-Dw-BgQ" firstAttribute="centerX" secondItem="O3E-cm-wok" secondAttribute="centerX" id="ChL-CI-yer"/>
-                            <constraint firstItem="Ma6-Dw-BgQ" firstAttribute="centerY" secondItem="O3E-cm-wok" secondAttribute="centerY" id="Hix-fn-OmI"/>
-                            <constraint firstItem="Ma6-Dw-BgQ" firstAttribute="leading" secondItem="O3E-cm-wok" secondAttribute="leading" constant="20" symbolic="YES" id="frP-Qh-hzA"/>
+                            <constraint firstItem="Aoc-hw-gAb" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="3oh-ud-eHW"/>
+                            <constraint firstItem="Aoc-hw-gAb" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="kVq-v5-ROJ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="releasesTableView" destination="Ma6-Dw-BgQ" id="g9n-Kl-1ku"/>
+                        <outlet property="esl" destination="Aoc-hw-gAb" id="mfk-KO-k8Y"/>
                     </connections>
                 </viewController>
-                <customObject id="bxR-ut-Xcz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588.5" y="676"/>
+            <point key="canvasLocation" x="-68.5" y="385"/>
         </scene>
     </scenes>
     <resources>
